@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Interactable : MonoBehaviour {
 
@@ -9,9 +10,10 @@ public class Interactable : MonoBehaviour {
     bool isFocus = false;
     Transform player;
     bool hasInteracted = false;
+
     public virtual void interact()
     {
-
+        Debug.Log("Interacting With " + name);
     }
     private void Update()
     {
