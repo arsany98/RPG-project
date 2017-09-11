@@ -7,7 +7,7 @@ public class Item : ScriptableObject {
 
     public string itemName = "New item";
     public Sprite icon = null;
-    public bool isEquipped = false;
+    public bool isDefaultItem = false;
 
     public virtual void Use()
     {
